@@ -2,7 +2,6 @@ from django.shortcuts import render
 from . models import producat, seller, buyer
 import datetime
 
-# Create your views here.
 
 
 def index(request):
@@ -20,7 +19,6 @@ def buy(request, pk):
         address = request.POST['address']
         phone = request.POST['phone']
         quantity = int(request.POST['quantity'])
-
         by = buyer(name=name, address=address, phone=phone)
         by.save()
         amount = float(pro.price)

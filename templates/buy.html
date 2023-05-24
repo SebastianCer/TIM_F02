@@ -12,16 +12,16 @@
             <div class="form-group">
 
     <label for="name">Nombre:</label>
-     <input type="text" name="name" class="form-control" id="name"  placeholder="Ingresa tu nombre">
+     <input type="text" name="name" maxlength="40" class="form-control" id="name"  placeholder="Ingresa tu nombre" required>
 
    <label for="address">Dirección:</label>
-     <input type="text" name="address" class="form-control" id="address"  placeholder="Ingresa tu dirección">
-
-   <label for="name">Teléfono:</label>
-     <input type="text" name="phone" class="form-control" id="phone"  placeholder="Enter your  phone">
+     <input type="text" name="address" maxlength="50" class="form-control" id="address"  placeholder="Ingresa tu dirección" required>
+     
+    <label for="phone">Enter a phone number:</label>
+     <input type="tel" id="phone" class="form-control" name="phone" placeholder="123456789" pattern="[0-9]{9}" required>
 
     <label for="quantity">Cantidad:</label>
-     <input type="number" name="quantity" class="form-control" id="quantity"  placeholder="Ingresa la cantidad">
+     <input type="number" name="quantity" class="form-control" id="quantity"  placeholder="Ingresa la cantidad" required>
 
      <input type="submit" class="btn btn-secondary m-2 mx-auto"  value="Comprar">
   </div>

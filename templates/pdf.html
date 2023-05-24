@@ -2,6 +2,8 @@
 
 {% block content %}
 
+
+
   <div id="pt">
       <div class="container mt-5">
           <div><h1>Factura Farmacia</h1> </div>
@@ -67,6 +69,7 @@
                     </td>
                 </tr>   
 
+
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:1px solid #333; border-bottom:1px solid #333; border-left:1px solid #333; border-right:1px solid #333;"
@@ -75,6 +78,8 @@
                         width="30%" align="center">Cantidad</td>
                     <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:1px solid #333; border-bottom:1px solid #333; border-right:1px solid #333;"
                         width="30%" align="center">Monto</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:13px; border-top:1px solid #333; border-bottom:1px solid #333; border-right:1px solid #333;"
+                        width="30%" align="center">Total</td>   
                 </tr>
                 <tr>
                     <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:1px solid #333; border-left:1px solid #333; border-right:1px solid #333;"
@@ -83,6 +88,8 @@
                         align="center">{{data.pquantity}}</td>
                     <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:1px solid #333; border-right:1px solid #333;"
                         align="center">{{data.pprice}}</td>
+                    <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px; border-bottom:1px solid #333; border-right:1px solid #333;"
+                        align="center">{{data.ptotal}}</td>
                 </tr>
             </table>
         </td>
